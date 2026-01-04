@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+/* ======================
+   BASE STYLES (DESKTOP)
+====================== */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+.card {
+  width: 420px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1e4ed8;
+}
+
+/* Error */
+.error-text {
+  color: #dc2626;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* List */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list {
+  height: 200px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Checkbox */
+.checkbox {
+  cursor: pointer;
+}
+
+/* Text */
+.text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Edit input */
+.edit-input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Icon buttons */
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.icon-btn.edit {
+  color: #2563eb;
+}
+
+.icon-btn.delete {
+  color: #dc2626;
+}
+
+.icon-btn.save {
+  color: green;
+}
+
+.icon-btn.cancel {
+  color: #6b7280;
+}
+
+.icon-btn:hover {
+  opacity: 0.8;
+}
+
+/* ======================
+   TABLET (≤ 768px)
+====================== */
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .button {
+    padding: 10px;
+  }
+}
+
+/* ======================
+   MOBILE (≤ 480px)
+====================== */
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .form {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .item {
+    align-items: flex-start;
+  }
+
+  .icon-btn {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+}
