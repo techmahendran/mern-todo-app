@@ -73,7 +73,7 @@ body {
   margin: 0;
 }
 .list {
-  height: 200px;
+  max-height: 200px;
   overflow-y: auto;
   padding-right: 6px;
 }
